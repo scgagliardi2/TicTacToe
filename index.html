@@ -12,16 +12,101 @@
         <h1>Tic Tac Toe</h1>
         <hr>
         <div class="tttboard">
-            <div class="tttbox">
-                test
+            <div id="tl" class="button" onclick="placeMove(this.id)" style="border-bottom:2px solid; border-right:2px solid">
+                 
             </div>
-            <div class="tttbox">
-                test
+            <div id="tm" class="button" onclick="placeMove(this.id)" style="border-bottom:2px solid; border-right:2px solid">
+                 
             </div>
-            <div class="tttbox">
-                test
+            <div id="tr" class="button" onclick="placeMove(this.id)" style="border-bottom:2px solid">
+                 
             </div>
+            <div id="ml" class="button" onclick="placeMove(this.id)" style="border-bottom:2px solid; border-right:2px solid">
+                 
+            </div>
+            <div id="mm" class="button" onclick="placeMove(this.id)" style="border-bottom:2px solid; border-right:2px solid">
+                 
+            </div>
+            <div id="mr" class="button" onclick="placeMove(this.id)" style="border-bottom:2px solid">
+                 
+            </div>
+            <div id="bl" class="button" onclick="placeMove(this.id)" style="border-right:2px solid">
+                 
+            </div>
+            <div id="bm" class="button" onclick="placeMove(this.id)" style="border-right:2px solid">
+                 
+            </div>
+            <div id="br" class="button" onclick="placeMove(this.id)" >
+                 
+            </div>
+            <p id="tttDisplay">"O's turn.</p>
         </div>
+        <script>
+            function placeMove(id) { 
+                document.getElementById(id).innerHTML = "X"
+                checkWin();}
+        </script>
+        <script>
+            function checkWin() { 
+                if (document.getElementById('tl').innerHTML == document.getElementById('tm').innerHTML) {
+                    if (document.getElementById('tl').innerHTML == document.getElementById('tr').innerHTML) {
+                        if (document.getElementById('tl').innerHTML == 'X' || document.getElementById('tl').innerHTML == 'O') {
+                        document.getElementById('tttDisplay').innerHTML = "You win"
+                        }
+                    }
+                }
+                if (document.getElementById('ml').innerHTML == document.getElementById('mm').innerHTML) {
+                    if (document.getElementById('ml').innerHTML == document.getElementById('mr').innerHTML) {
+                        if (document.getElementById('ml').innerHTML == 'X' || document.getElementById('ml').innerHTML == 'O') {
+                        document.getElementById('tttDisplay').innerHTML = "You win"
+                        }
+                    }
+                }
+                if (document.getElementById('bl').innerHTML == document.getElementById('bm').innerHTML) {
+                    if (document.getElementById('bl').innerHTML == document.getElementById('br').innerHTML) {
+                        if (document.getElementById('bl').innerHTML == 'X' || document.getElementById('bl').innerHTML == 'O') {
+                        document.getElementById('tttDisplay').innerHTML = "You win"
+                        }
+                    }
+                }
+                if (document.getElementById('tl').innerHTML == document.getElementById('ml').innerHTML) {
+                    if (document.getElementById('tl').innerHTML == document.getElementById('bl').innerHTML) {
+                        if (document.getElementById('tl').innerHTML == 'X' || document.getElementById('tl').innerHTML == 'O') {
+                        document.getElementById('tttDisplay').innerHTML = "You win"
+                        }
+                    }
+                }
+                if (document.getElementById('tm').innerHTML == document.getElementById('mm').innerHTML) {
+                    if (document.getElementById('tm').innerHTML == document.getElementById('bm').innerHTML) {
+                        if (document.getElementById('tm').innerHTML == 'X' || document.getElementById('tm').innerHTML == 'X' 'O') {
+                        document.getElementById('tttDisplay').innerHTML = "You win"
+                        }
+                    }
+                }
+                if (document.getElementById('tr').innerHTML == document.getElementById('mr').innerHTML) {
+                    if (document.getElementById('tr').innerHTML == document.getElementById('br').innerHTML) {
+                        if (document.getElementById('tr').innerHTML == 'X' || document.getElementById('tr').innerHTML == 'X' 'O') {
+                        document.getElementById('tttDisplay').innerHTML = "You win"
+                        }
+                    }
+                }
+                if (document.getElementById('tl').innerHTML == document.getElementById('mm').innerHTML) {
+                    if (document.getElementById('tl').innerHTML == document.getElementById('br').innerHTML) {
+                        if (document.getElementById('tl').innerHTML == 'X' || document.getElementById('tl').innerHTML == 'X' 'O') {
+                        document.getElementById('tttDisplay').innerHTML = "You win"
+                        }
+                    }
+                } else if (document.getElementById('tr').innerHTML == document.getElementById('mm').innerHTML) {
+                    if (document.getElementById('tr').innerHTML == document.getElementById('bl').innerHTML) {
+                        if (document.getElementById('tr').innerHTML == 'X' || document.getElementById('tr').innerHTML == 'X' 'O') {
+                            document.getElementById('tttDisplay').innerHTML = "You win"
+                        }
+                    }
+                }*/
+            }
+        </script>
+        <br><br><br><br>   
+        <hr>
         <h1>Super Tic Tac Toe</h1>
         <hr>
         <div>

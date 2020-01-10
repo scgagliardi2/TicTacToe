@@ -8,13 +8,26 @@ h1 {
 }
 
 .tttboard {
-    max-width:400px;
+    max-width:360px;
     margin: auto;
-    border: 1px solid lightcoral;
 }
 
-.tttbox {
-    width: 33%;
+.button {
+    width: 116px;
+    height: 116px;
     float: left;
     text-align:center;
+    border: none;
+    color: Black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 80px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    
 }
+
+.button:hover {
+    background-color: rgb(135, 196, 204);
+  }
