@@ -1,0 +1,20 @@
+* {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: powderblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tttboard {
+    max-width:400px;
+    margin: auto;
+    border: 1px solid lightcoral;
+}
+
+.tttbox {
+    width: 33%;
+    float: left;
+    text-align:center;
+}
