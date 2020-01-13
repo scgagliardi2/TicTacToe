@@ -26,7 +26,7 @@ function placeMove(id, letter) {
     }
 }
 
-function placeWin() { 
+function placeWin(letter) { 
     if (document.getElementById('tl').innerHTML == document.getElementById('tm').innerHTML) {
         if (document.getElementById('tl').innerHTML == document.getElementById('tr').innerHTML) {
             if (document.getElementById('tl').innerHTML == 'X' || document.getElementById('tl').innerHTML == 'O') {
