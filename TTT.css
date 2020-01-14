@@ -18,6 +18,13 @@ h1 {
 .tttboard {
     max-width:360px;
     margin: auto;
+    overflow: visible;
+}
+
+.ttt3board {
+    max-width:600px;
+    margin: auto;
+    overflow: visible;
 }
 
 .button {
