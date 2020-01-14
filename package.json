@@ -1,0 +1,23 @@
+{
+  "name": "sam.tictactoe",
+  "version": "1.0.0",
+  "description": "Two styles of TicTacToe in HTML and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scgagliardi2/TicTacToe-plusSuperTTT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scgagliardi2/TicTacToe-plusSuperTTT/issues"
+  },
+  "homepage": "https://github.com/scgagliardi2/TicTacToe-plusSuperTTT#readme",
+  "dependencies": {
+    "typescript": "^3.7.4"
+  }
+}
