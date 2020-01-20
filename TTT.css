@@ -19,12 +19,7 @@ h1 {
     max-width:360px;
     margin: auto;
     overflow: visible;
-}
-
-.ttt3board {
-    max-width:600px;
-    margin: auto;
-    overflow: visible;
+    text-align: center;
 }
 
 .button {
@@ -45,15 +40,21 @@ h1 {
 
 .button:hover {
     background-color: rgb(135, 196, 204);
-  }
+}
 
-  .rbutton {
-    background-color: lightgoldenrodyellow;
+.rbutton {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(250, 250, 210);
     border: none;
     color: black;
-    padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-  }
+    overflow: visible;
+    border-radius: 5px;
+    float: center;
+}
+
+.rbutton:hover {
+    background-color: rgb(243, 243, 166);
+}

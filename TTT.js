@@ -93,3 +93,18 @@ function placeWin(letter) {
         }
     }
 }
+function reset() {
+    turn = 'O';
+    GameWon = false;
+    document.getElementById('tl').innerHTML = "";
+    document.getElementById('tm').innerHTML = "";
+    document.getElementById('tr').innerHTML = "";
+    document.getElementById('ml').innerHTML = "";
+    document.getElementById('mm').innerHTML = "";
+    document.getElementById('mr').innerHTML = "";
+    document.getElementById('bl').innerHTML = "";
+    document.getElementById('bm').innerHTML = "";
+    document.getElementById('br').innerHTML = "";
+    document.getElementById("tttDisplay").innerHTML = turn + "'s turn.";
+    document.getElementById('tttInfo').innerHTML = "";
+}
