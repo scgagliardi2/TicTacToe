@@ -21,8 +21,8 @@ function placeMove(id: string, letter: string) {
             return;
         } 
         else {
-            document.getElementById('tttInfo')!.innerHTML = ""
-            document.getElementById(id)!.innerHTML = letter
+            document.getElementById('tttInfo')!.innerHTML = "";
+            document.getElementById(id)!.innerHTML = letter;
             changeTurn();
             placeWin(letter);
         }
@@ -93,4 +93,20 @@ function placeWin(letter: string) {
             }
         }
     }
+}
+
+function reset() {
+    turn = 'O';
+    GameWon = false;
+    document.getElementById("tttDisplay")!.innerHTML = turn + "'s turn.";
+    document.getElementById('tttInfo')!.innerHTML = "";
+    document.getElementById('tl')!.innerHTML = "";
+    document.getElementById('tm')!.innerHTML = "";
+    document.getElementById('tr')!.innerHTML = "";
+    document.getElementById('ml')!.innerHTML = "";
+    document.getElementById('mm')!.innerHTML = "";
+    document.getElementById('mr')!.innerHTML = "";
+    document.getElementById('bl')!.innerHTML = "";
+    document.getElementById('bm')!.innerHTML = "";
+    document.getElementById('br')!.innerHTML = "";
 }
